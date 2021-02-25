@@ -1,0 +1,38 @@
+.example-tree-progress-bar {
+    position: fixed;
+    top: 0; left: 0
+}
+
+.container {
+    min-height: calc(100vh - 128px);
+    display: flex;
+
+    .nav-catalog {
+        .mat-tree {
+            width: 200px;
+        }
+    }
+
+    .wrap-catalog {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-grow: 1;
+        flex-wrap: wrap;
+
+        mat-card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+
+            mat-card-title {
+                .mat-icon {
+                    width: 100%;
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+}

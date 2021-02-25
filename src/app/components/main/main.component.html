@@ -1,0 +1,62 @@
+<mat-carousel
+    timings="250ms ease-in"
+    [autoplay]="true"
+    interval="5000"
+    color="accent"
+    maxWidth="auto"
+    proportion="25"
+    slides="5"
+    [loop]="true"
+    [hideArrows]="false"
+    [hideIndicators]="false"
+    [useKeyboard]="true"
+    [useMouseWheel]="false"
+    orientation="ltr"
+>
+    <mat-carousel-slide
+        #matCarouselSlide
+        *ngFor="let slide of slides; let i = index"
+        [image]="slide.image"
+        overlayColor="#00000040"
+        [hideOverlay]="false"
+    ></mat-carousel-slide>
+</mat-carousel>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Home Services Bring the Cars to You</mat-card-title>
+        <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        <p>
+            For your convenience, our dealers have expanded the ways you can shop for a new or used car from the comfort of home.
+        </p>
+
+        <ul>
+            <li>
+                <h3>Video Walkaround</h3>
+                <p>Experience the car via video chat and ask the dealer any questions you may have.</p>
+            </li>
+            <li>
+                <h3>Test Drive at Home</h3>
+                <p>Choose a car and the dealer will bring it to you for a no-obligation test drive.</p>
+            </li>
+            <li>
+                <h3>Local Home Delivery</h3>
+                <p>Start the purchase online and the dealer will deliver the car & paperwork to you.</p>
+            </li>
+        </ul>
+        <h2>Certified Pre-Owned</h2>
+        <h4>CPO vs. Used: 3 Reasons to Buy Certified Pre-Owned</h4>  
+        <p>
+            Buying a car is a big deal -- and saving money is a crucial aspect of any new - or used - car purchase. With that in mind, we're listing a few reasons why a certified pre-owned (or CPO) vehicle may be right for you.
+
+            First, a certified pre-owned car can be better than a traditional used vehicle because regular used cars often come with a lot of unknowns -- and that could cost you a lot of money. But buying a certified pre-owned vehicle ensures you aren't saddling yourself with any major systems issues or hidden defects... More about CPO Vehicles
+        </p>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+</mat-card>
